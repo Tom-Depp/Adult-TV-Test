@@ -2,7 +2,7 @@
   "schema": 1,
   "channel": "test",
   "version": "1.78",
-  "download_url": "https://raw.githubusercontent.com/Tom-Depp/Adult-TV-Test/main/releases/custom-adulttv-test-v1.78-github-self-update.zip",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/V1.78/custom-adulttv-test-v1.78.zip",
   "sha256": "b4d059609245f86a40d2a6b7c1742e867afc1cf46429202a20ef793877c2385e",
   "notes": "Initial GitHub self-update test build. Streaming logic is unchanged from v1.77."
 }
