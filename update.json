@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.80",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.80/custom-adulttv-test-v1.80.zip",
-  "sha256": "8dfe4acf27da46a78edb29e53de99da53f6f6b7f6df51a4c3ef3be471bf6c41e",
-  "notes": "Experimental updater UX fix.\n\nKeeps the GitHub update check visible long enough to be noticeable.\n\nShows a short confirmation when no newer version is available.\n\nRemoves the duplicated version number from the Release Notes body.\n\nReplaces the skin-dependent text viewer with a standard Kodi dialog that has a visible OK button.\n\nStreaming logic is unchanged from v1.77-v1.79.\n\nThis is an experimental pre-release and may contain bugs or incomplete features."
+  "version": "1.81",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.81/custom-adulttv-test-v1.81.zip",
+  "sha256": "cd3d628f007c32b39ce5d63ec7cb8080e5311ee297820dccc48c91bf1e89bb25",
+  "notes": "Improves the GitHub self-update dialog.\n\nThe initial update prompt now shows only the available version and no longer includes Release Notes.\n\nRelease Notes are still shown once after a successful update.\n\nAdds the official website logo as the menu thumbnail for Adult-TV-Channels.com.\n\nAdult-TV-Channels.click and FuckFlix.click remain without embedded thumbnails for now so they can later use a dedicated GitHub thumbnails folder.\n\nStreaming logic is unchanged from v1.77-v1.80.\n\nThis is an experimental pre-release and may contain bugs or incomplete features."
 }
