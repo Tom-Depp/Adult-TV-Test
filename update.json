@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.81",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.81/custom-adulttv-test-v1.81.zip",
-  "sha256": "cd3d628f007c32b39ce5d63ec7cb8080e5311ee297820dccc48c91bf1e89bb25",
-  "notes": "Improves the GitHub self-update dialog.\n\nThe initial update prompt now shows only the available version and no longer includes Release Notes.\n\nRelease Notes are still shown once after a successful update.\n\nAdds the official website logo as the menu thumbnail for Adult-TV-Channels.com.\n\nAdult-TV-Channels.click and FuckFlix.click remain without embedded thumbnails for now so they can later use a dedicated GitHub thumbnails folder.\n\nStreaming logic is unchanged from v1.77-v1.80.\n\nThis is an experimental pre-release and may contain bugs or incomplete features."
+  "version": "1.82",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.82/custom-adulttv-test-v1.82.zip",
+  "sha256": "ac6b95bf7dac12caf5a4c9f530168c64b87a0e82f4d8bd601d5fc8229e6e547c",
+  "notes": "Adds GitHub-hosted thumbnails for the Custom Site, Adult-TV-Channels.click and FuckFlix.click.\n\nKeeps the already working Adult-TV-Channels.com website thumbnail unchanged.\n\nUpdates the self-update process so the Custom Site image field is refreshed in CUMination after an update, allowing the new thumbnail to appear correctly on existing installations.\n\nStreaming logic is unchanged from v1.77-v1.81.\n\nThis is an experimental pre-release and may contain bugs or incomplete features."
 }
