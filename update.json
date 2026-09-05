@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.82",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.82/custom-adulttv-test-v1.82.zip",
-  "sha256": "ac6b95bf7dac12caf5a4c9f530168c64b87a0e82f4d8bd601d5fc8229e6e547c",
-  "notes": "Adds GitHub-hosted thumbnails for the Custom Site, Adult-TV-Channels.click and FuckFlix.click.\n\nKeeps the already working Adult-TV-Channels.com website thumbnail unchanged.\n\nUpdates the self-update process so the Custom Site image field is refreshed in CUMination after an update, allowing the new thumbnail to appear correctly on existing installations.\n\nStreaming logic is unchanged from v1.77-v1.81.\n\nThis is an experimental pre-release and may contain bugs or incomplete features."
+  "version": "1.83",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.83/custom-adulttv-test-v1.83.zip",
+  "sha256": "9f3f0706b759f4d9d8768467d1b3c483e3ee2d616fba4fdaf2002c439477075d",
+  "notes": "Improves the Release Notes window with a much larger, scrollable dialog so longer changelogs can be displayed more comfortably.\n\nFixes the Custom Site thumbnail migration by downloading the configured GitHub image to Cumination's local custom-site storage and repairing the stored image reference.\n\nAdds poster artwork for Adult-TV-Channels.com, Adult-TV-Channels.click and FuckFlix.click so site thumbnails can also be used by poster/landscape-based skin views such as Arctic: Zephyr 2 - Resurrection.\n\nKeeps the existing site thumbnails and streaming logic unchanged.\n\nUses the correct Add-on name spelling: Cumination.\n\nThis is an experimental pre-release and may contain bugs or incomplete features."
 }
