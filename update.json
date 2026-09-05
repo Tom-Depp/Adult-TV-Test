@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.78",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/V1.78/custom-adulttv-test-v1.78.zip",
-  "sha256": "b4d059609245f86a40d2a6b7c1742e867afc1cf46429202a20ef793877c2385e",
-  "notes": "Initial GitHub self-update test build. Streaming logic is unchanged from v1.77."
+  "version": "1.80",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.80/custom-adulttv-test-v1.80.zip",
+  "sha256": "8dfe4acf27da46a78edb29e53de99da53f6f6b7f6df51a4c3ef3be471bf6c41e",
+  "notes": "Experimental updater UX fix.\n\nKeeps the GitHub update check visible long enough to be noticeable.\n\nShows a short confirmation when no newer version is available.\n\nRemoves the duplicated version number from the Release Notes body.\n\nReplaces the skin-dependent text viewer with a standard Kodi dialog that has a visible OK button.\n\nStreaming logic is unchanged from v1.77-v1.79.\n\nThis is an experimental pre-release and may contain bugs or incomplete features."
 }
