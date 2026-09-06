@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.84",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.84/custom-adulttv-test-v1.84.zip",
-  "sha256": "62ba47360b8b5bea8f4fef212d8b2573784ac90f97adb5018f079beae209fc71",
-  "notes": "Fixes the Release Notes dialog OK button so it is visually centered and reliably closes the window when clicked.\n\nAdds a proper onClick handler while keeping keyboard and back navigation fallbacks.\n\nImproves site artwork compatibility by assigning the site thumbnail to thumb, icon, poster, fanart and landscape artwork for Adult-TV-Channels.com, Adult-TV-Channels.click and FuckFlix.click.\n\nThis improves compatibility with Arctic: Zephyr 2 - Resurrection Landscape Wall and other skin views that prefer landscape or fanart artwork.\n\nKeeps the working Custom Site thumbnail repair from v1.83 unchanged.\n\nStreaming logic is unchanged from v1.77-v1.83.\n\nThis is an experimental pre-release and may contain bugs or incomplete features."
+  "version": "1.85",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.85/custom-adulttv-test-v1.85.zip",
+  "sha256": "3a571b6ebf89d53c924e604b9a848efd9feb795185aa11b5fe98d0be0449a127",
+  "notes": "Keeps the visible Cumination Custom Site name permanently as Adult TV Test without a version suffix.\n\nThe internal version number remains fully versioned for update detection, GitHub releases and future maintenance.\n\nUpdates the self-updater fallback so future updates no longer re-add the version number to the visible Site title.\n\nThis provides a stable Site/folder name for future playlist generation and m3u4u integration.\n\nStreaming, thumbnail, Landscape Wall and update logic remain unchanged from v1.84.\n\nThis is an experimental pre-release and may contain bugs or incomplete features."
 }
