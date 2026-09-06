@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.86",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.86/custom-adulttv-test-v1.86.zip",
-  "sha256": "ff0b3aaa954e4a08d0ef799995ff6870d2df0cc7785e5fad2268c2e1d91a2098",
-  "notes": "Renames the previous Senderstatus prüfen entry to Settings and adds the dedicated Settings thumbnail.\n\nAdds a new Settings dialog with a persistent playlist folder selector plus Create Playlist, Update Playlist and Senderstatus prüfen actions.\n\nCreate Playlist currently collects all discoverable channels from Adult-TV-Channels.com and OXAX.tv into Adult TV Test.m3u using stable Cumination plugin links instead of temporary stream URLs.\n\nUpdate Playlist refreshes an existing Adult TV Test playlist, detects added, removed or changed channels, avoids duplicate entries and leaves the file untouched when nothing has changed.\n\nThe existing Senderstatus prüfen site-selection workflow is preserved and now launches from Settings; the Settings window closes completely when a status check is started.\n\nStreaming, thumbnail, Landscape Wall and self-update logic remain unchanged from v1.85.\n\nThis is an experimental pre-release and may contain bugs or incomplete features."
+  "version": "1.87",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.87/custom-adulttv-test-v1.87.zip",
+  "sha256": "6790ab375056d26ecd3627922044a3c289437c1be8598133bd9552483fcc9ebf",
+  "notes": "Adds dedicated PVR_COM and PVR_OXAX playback modes for playlist entries.\n\nPlaylist playback now resolves the current stream and returns it to PVR IPTV Simple through Kodi's resolved-URL mechanism instead of starting the player directly.\n\nGenerated playlist links now use channel= instead of name= to avoid collisions with stale or duplicated name parameters.\n\nAdds compatibility handling for older cached links that contain multiple name parameters by selecting the last valid value instead of failing with a Python list type error.\n\nNormal playback from the Custom Site, Settings, playlist creation/update, thumbnails, Landscape Wall support and self-update behavior remain unchanged from v1.86.\n\nThis is an experimental pre-release and may contain bugs or incomplete features."
 }
