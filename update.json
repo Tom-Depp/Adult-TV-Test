@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.85",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.85/custom-adulttv-test-v1.85.zip",
-  "sha256": "3a571b6ebf89d53c924e604b9a848efd9feb795185aa11b5fe98d0be0449a127",
-  "notes": "Keeps the visible Cumination Custom Site name permanently as Adult TV Test without a version suffix.\n\nThe internal version number remains fully versioned for update detection, GitHub releases and future maintenance.\n\nUpdates the self-updater fallback so future updates no longer re-add the version number to the visible Site title.\n\nThis provides a stable Site/folder name for future playlist generation and m3u4u integration.\n\nStreaming, thumbnail, Landscape Wall and update logic remain unchanged from v1.84.\n\nThis is an experimental pre-release and may contain bugs or incomplete features."
+  "version": "1.86",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.86/custom-adulttv-test-v1.86.zip",
+  "sha256": "ff0b3aaa954e4a08d0ef799995ff6870d2df0cc7785e5fad2268c2e1d91a2098",
+  "notes": "Renames the previous Senderstatus prüfen entry to Settings and adds the dedicated Settings thumbnail.\n\nAdds a new Settings dialog with a persistent playlist folder selector plus Create Playlist, Update Playlist and Senderstatus prüfen actions.\n\nCreate Playlist currently collects all discoverable channels from Adult-TV-Channels.com and OXAX.tv into Adult TV Test.m3u using stable Cumination plugin links instead of temporary stream URLs.\n\nUpdate Playlist refreshes an existing Adult TV Test playlist, detects added, removed or changed channels, avoids duplicate entries and leaves the file untouched when nothing has changed.\n\nThe existing Senderstatus prüfen site-selection workflow is preserved and now launches from Settings; the Settings window closes completely when a status check is started.\n\nStreaming, thumbnail, Landscape Wall and self-update logic remain unchanged from v1.85.\n\nThis is an experimental pre-release and may contain bugs or incomplete features."
 }
