@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.87",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.87/custom-adulttv-test-v1.87.zip",
-  "sha256": "6790ab375056d26ecd3627922044a3c289437c1be8598133bd9552483fcc9ebf",
-  "notes": "Adds dedicated PVR_COM and PVR_OXAX playback modes for playlist entries.\n\nPlaylist playback now resolves the current stream and returns it to PVR IPTV Simple through Kodi's resolved-URL mechanism instead of starting the player directly.\n\nGenerated playlist links now use channel= instead of name= to avoid collisions with stale or duplicated name parameters.\n\nAdds compatibility handling for older cached links that contain multiple name parameters by selecting the last valid value instead of failing with a Python list type error.\n\nNormal playback from the Custom Site, Settings, playlist creation/update, thumbnails, Landscape Wall support and self-update behavior remain unchanged from v1.86.\n\nThis is an experimental pre-release and may contain bugs or incomplete features."
+  "version": "1.88",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.88/custom-adulttv-test-v1.88.zip",
+  "sha256": "1e3cf31ce4ac488fb1983581ae0107290fd28017e4090f6a8ce442f35b5d041e",
+  "notes": "Adds color-coded Site groups and playlist channel labels for Adult-TV-Channels.com, OXAX.tv, Adult-TV-Channels.click and FuckFlix.click.\n\nAdult-TV-Channels.com uses orange, OXAX.tv uses green, and both .click Sites use yellow; the Cumination Add-on suffix is shown in violet.\n\nAdds Adult-TV-Channels.click and FuckFlix.click to playlist creation and update, including dedicated PVR_CLICK and PVR_FUCKFLIX resolver modes.\n\nUpdate Playlist now rebuilds the managed Adult TV Test playlist from the currently discoverable channels so existing entries are migrated to the new four-Site grouping and naming scheme without duplicates.\n\nPlaylist display names remove trailing Online text and use the original channel name where possible; Penthouse TV is normalized to Penthouse Gold.\n\nPVR_OXAX now follows the same fresh page, candidate and header handling used by the working direct OXAX playback path while returning the resolved stream to PVR IPTV Simple.\n\nNormal Custom Site playback, Settings, Senderstatus prüfen, thumbnails, Landscape Wall support and self-update behavior remain otherwise unchanged.\n\nThis is an experimental pre-release and may contain bugs or incomplete features."
 }
