@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.94",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.94/custom-adulttv-test-v1.94.zip",
-  "sha256": "27072f16b676dc7da0d1874d6aaf5661e8687fd9105fc6e56ce65a686d9eca00",
-  "notes": "Fixes the Simple IPTV Update false-negative state detection by no longer querying the PVR client while the PVR manager is still shutting down.\n\nAdds a short settling phase before re-enabling Adult IPTV and verifies successful reload using the actual Adult TV Test channel state after IPTV Simple has restarted.\n\nAdds Cumination-style hover switching for the Senderliste erstellen, Senderstatus prüfen and Release Notes tabs while keeping Create, Update, OK and Abbrechen as click-only actions.\n\nExtends the Simple IPTV Prüfen result notification duration so failed channel names remain visible longer.\n\nPenthouse Passion TV and Playboy TV currently fail with source-side HTTP 404 responses; both were confirmed unavailable on the source website, so no resolver workaround is applied.\n\nNormal Custom Site playback, resolver logic, playlist generation, thumbnails, Landscape Wall support and update-check behavior remain otherwise unchanged from v1.93.\n\nThis is an experimental pre-release and may contain bugs or incomplete features."
+  "version": "1.95",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.95/custom-adulttv-test-v1.95.zip",
+  "sha256": "6248ca256e8f92032ce6686ca2eaa2e65b6eb10b8a91d9bd6134094f260718aa",
+  "notes": "New Features:\n\n● Adds white divider lines to the Custom Site Settings window to clearly separate the tabs, settings area and OK/Abbrechen column.\n\n● Redesigns Release Notes with an opaque background, white frame and structured New Features and Bugfixes sections with clearer bullet-point spacing and scrolling support.\n\nBugfixes:\n\n● Simple IPTV Update now starts immediately without an unnecessary confirmation dialog.\n\n● Keeps the successful IPTV update notification visible in front of the Settings window before reopening Settings.\n\n● Changes tab hover handling to Kodi's mouse-move action path so the Settings tabs can switch when the mouse moves over them."
 }
