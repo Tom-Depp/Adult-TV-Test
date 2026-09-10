@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.96",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.96/custom-adulttv-test-v1.96.zip",
-  "sha256": "bbe04c2a0f5789d63d18d2298313c94583fd9e79046572e19977b2d61e3036cd",
-  "notes": "New Features:\n\n+ Renames the playlist import section to m3u4u Liste importieren & aktualisieren so the source of the imported playlist is immediately clear.\n\nBugfixes:\n\n- Release Notes use + for New Features and - for Bugfixes instead of unsupported bullet symbols.\n\n- The post-update Release Notes dialog uses the same centered, colored section headings and structured layout as the permanent Settings tab.\n\n- The white Settings and Release Notes divider/frame lines are reduced to a thin 1-pixel appearance."
+  "version": "1.97",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.97/custom-adulttv-test-v1.97.zip",
+  "sha256": "c8867512bba232b9948edd1d707c61f30aa8e8db106e1caf8fc5549d2cdbbd22",
+  "notes": "New Features:\n\n+ Settings tabs now switch automatically when they receive focus from keyboard or Yatse navigation, matching mouse hover behavior.\n\nBugfixes:\n\n- Replaces the bright separator lines with very thin dark-gray Cumination-style lines.\n\n- Moves the Release Notes border from the change-text area to the outside edge of the Release Notes window.\n\n- Keeps Settings closed after Create, Update and Prüfen actions finish instead of reopening the dialog."
 }
