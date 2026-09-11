@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.101",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.101/custom-adulttv-test-v1.101.zip",
-  "sha256": "c8a49ae86275bdf5c04572cea71e8d8ffa164931104a4a1c2b17328401b61155",
-  "notes": "New Features:\n\n+ Adds an optional Skip channels after 3 failed checks setting and a Recheck Skipped Channels action that can restore recovered channels to the Adult TV Test playlist.\n\n+ Converts the custom Settings window and controls to English to match Cumination and the Release Notes.\n\nBugfixes:\n\n- Manual Site channel-status checks now update an existing Adult TV Test playlist using the completed check results.\n\n- Keeps a safe second OXAX attempt when Auto Check is disabled while retaining faster single-attempt behavior for the other stable Site paths.\n\n- Speeds up Site checks using the validated retry behavior from previous test runs without removing important failure fallbacks."
+  "version": "1.102",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.102/custom-adulttv-test-v1.102.zip",
+  "sha256": "9b2677557971d05100c122b67eea4f8693292b6442c234f9b91b23462e96d6ea",
+  "notes": "New Features:\n\n+ Detects and stores channel video resolution during successful checks and shows 576p, 720p or 1080p directly after channel names in Sites and the generated Adult TV Test playlist.\n\n+ Simple IPTV checks now refresh saved resolution labels in an existing generated playlist without removing channels.\n\nBugfixes:\n\n- Converts the remaining user-facing dialogs, notifications, progress messages and the no-stream warning to English for consistency with Cumination."
 }
