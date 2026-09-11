@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.98",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.98/custom-adulttv-test-v1.98.zip",
-  "sha256": "5b8c10948581b62835c91a259e0617c8aa6088de07f7b182a0368726d4305c5b",
-  "notes": "New Features:\n\n+ Adds an Auto Check tab with enable/disable, first-start/every-start/weekly/monthly timing, Site selection and optional day/time rules.\n\n+ Site Auto Checks can update an existing Adult TV Test playlist so tested Site groups keep only channels that actually played; XY Max HD, XY Mix HD and EXXXotica HD are always kept and shown in yellow.\n\nBugfixes:\n\n- Adds the same thin dark-gray Cumination-style outer frame to the Settings and Release Notes windows."
+  "version": "1.99",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.99/custom-adulttv-test-v1.99.zip",
+  "sha256": "3aa216b35860ec36b002ba38c7752998e16312555dc0f11f7d4438fe98ee6879",
+  "notes": "New Features:\n\n+ Auto Check now runs only after a channel has genuinely failed to play. It first evaluates the failed channel and, if it still fails, checks either the whole Site or the Adult IPTV list depending on how playback was started.\n\n+ If no stream can be played during the follow-up check, Adult TV Test shows a dedicated Kein Stream Verfügbar dialog with a close button.\n\nBugfixes:\n\n- Auto Check changes are now applied only after pressing OK in Settings; Abbrechen/Back discards them, and Auto Check is blocked while Settings are open.\n\n- Site playback now prefers Kodi's native resolved-URL handoff to avoid the UI reset seen with the older direct Player.play path.\n\n- Removes obsolete Auto Check scheduler logic, the legacy playback-update hook, old PVR database-reset helpers and other unused legacy code paths that could cause conflicts."
 }
