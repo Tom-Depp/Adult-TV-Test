@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.100",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.100/custom-adulttv-test-v1.100.zip",
-  "sha256": "1325587d0f7a7ce763fb122a29e0ff63893217daf81e96901422985cfa0b593c",
-  "notes": "New Features:\n\n+ Moves Simple IPTV Prüfen next to the normal Prüfen button in the Senderstatus prüfen tab and replaces the previous IPTV heading/info area with the Auto Check toggle.\n\n+ Removes the separate Auto Check tab and its redundant Site-selection controls.\n\nBugfixes:\n\n- Prevents overlapping Senderstatus/Auto Check runs from opening nested Settings windows while a check is already active.\n\n- Adds stronger FuckFlix gateway cleanup during Senderstatus/Auto Check and suppresses repeated Kodi retries after a confirmed gateway playback failure so one bad stream cannot block the full check."
+  "version": "1.101",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.101/custom-adulttv-test-v1.101.zip",
+  "sha256": "c8a49ae86275bdf5c04572cea71e8d8ffa164931104a4a1c2b17328401b61155",
+  "notes": "New Features:\n\n+ Adds an optional Skip channels after 3 failed checks setting and a Recheck Skipped Channels action that can restore recovered channels to the Adult TV Test playlist.\n\n+ Converts the custom Settings window and controls to English to match Cumination and the Release Notes.\n\nBugfixes:\n\n- Manual Site channel-status checks now update an existing Adult TV Test playlist using the completed check results.\n\n- Keeps a safe second OXAX attempt when Auto Check is disabled while retaining faster single-attempt behavior for the other stable Site paths.\n\n- Speeds up Site checks using the validated retry behavior from previous test runs without removing important failure fallbacks."
 }
