@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.99",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.99/custom-adulttv-test-v1.99.zip",
-  "sha256": "3aa216b35860ec36b002ba38c7752998e16312555dc0f11f7d4438fe98ee6879",
-  "notes": "New Features:\n\n+ Auto Check now runs only after a channel has genuinely failed to play. It first evaluates the failed channel and, if it still fails, checks either the whole Site or the Adult IPTV list depending on how playback was started.\n\n+ If no stream can be played during the follow-up check, Adult TV Test shows a dedicated Kein Stream Verfügbar dialog with a close button.\n\nBugfixes:\n\n- Auto Check changes are now applied only after pressing OK in Settings; Abbrechen/Back discards them, and Auto Check is blocked while Settings are open.\n\n- Site playback now prefers Kodi's native resolved-URL handoff to avoid the UI reset seen with the older direct Player.play path.\n\n- Removes obsolete Auto Check scheduler logic, the legacy playback-update hook, old PVR database-reset helpers and other unused legacy code paths that could cause conflicts."
+  "version": "1.100",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.100/custom-adulttv-test-v1.100.zip",
+  "sha256": "1325587d0f7a7ce763fb122a29e0ff63893217daf81e96901422985cfa0b593c",
+  "notes": "New Features:\n\n+ Moves Simple IPTV Prüfen next to the normal Prüfen button in the Senderstatus prüfen tab and replaces the previous IPTV heading/info area with the Auto Check toggle.\n\n+ Removes the separate Auto Check tab and its redundant Site-selection controls.\n\nBugfixes:\n\n- Prevents overlapping Senderstatus/Auto Check runs from opening nested Settings windows while a check is already active.\n\n- Adds stronger FuckFlix gateway cleanup during Senderstatus/Auto Check and suppresses repeated Kodi retries after a confirmed gateway playback failure so one bad stream cannot block the full check."
 }
