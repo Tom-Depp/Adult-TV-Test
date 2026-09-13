@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.106",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.106/custom-adulttv-test-v1.106.zip",
-  "sha256": "79a05001c6607496630d4ddd187ad5f269a48e1b7cdc2412d5048d2060e5cb31",
-  "notes": "New Features:\n\n+ Adds 240p support for low-resolution HLS channels detected during safe manifest-only checks.\n\nBugfixes:\n\n- Uses one canonical channel name for storing and displaying resolutions, fixing missing labels on names ending in Online and Penthouse TV/Penthouse Gold aliases.\n\n- Migrates previously saved resolution records automatically and refreshes an existing Adult TV Test playlist without requiring a full recheck.\n\n- Captures resolution directly from already validated CLICK master manifests when a channel is checked without normal Kodi playback."
+  "version": "1.107",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.107/custom-adulttv-test-v1.107.zip",
+  "sha256": "1e8aa9e1630a922ba2c9cebb13ae4774b2aa44f93cf484b3a59d61864adf9386",
+  "notes": "Bugfixes:\n\n- Prevents Senderstatus checks from hanging indefinitely when Kodi/InputStream Adaptive stalls while opening XLivetv extensionless gateway streams.\n\n- Replaces potentially blocking player-state polling with Player.HasVideo-based startup detection so the configured 5-second start timeout remains effective.\n\nImprovements:\n\n+ Uses asynchronous stop handling for XLivetv, COM and FuckFlix gateway checks so failed stream starts no longer block the remaining channel scan."
 }
