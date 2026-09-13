@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.102",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.102/custom-adulttv-test-v1.102.zip",
-  "sha256": "9b2677557971d05100c122b67eea4f8693292b6442c234f9b91b23462e96d6ea",
-  "notes": "New Features:\n\n+ Detects and stores channel video resolution during successful checks and shows 576p, 720p or 1080p directly after channel names in Sites and the generated Adult TV Test playlist.\n\n+ Simple IPTV checks now refresh saved resolution labels in an existing generated playlist without removing channels.\n\nBugfixes:\n\n- Converts the remaining user-facing dialogs, notifications, progress messages and the no-stream warning to English for consistency with Cumination."
+  "version": "1.103",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.103/custom-adulttv-test-v1.103.zip",
+  "sha256": "c58351860ed7d0eb5ee82e8ec8e7bf9e421eb0d65adb8dc410998b4f22134a2f",
+  "notes": "Bugfixes:\n\n- Increases OXAX channel-status and Auto Check testing to up to three fresh attempts so temporarily unavailable streams can still be detected.\n\n- Keeps normal OXAX playback at up to two attempts when Auto Check is disabled.\n\n- Converts the last remaining channel-check status messages to English."
 }
