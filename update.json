@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.103",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.103/custom-adulttv-test-v1.103.zip",
-  "sha256": "c58351860ed7d0eb5ee82e8ec8e7bf9e421eb0d65adb8dc410998b4f22134a2f",
-  "notes": "Bugfixes:\n\n- Increases OXAX channel-status and Auto Check testing to up to three fresh attempts so temporarily unavailable streams can still be detected.\n\n- Keeps normal OXAX playback at up to two attempts when Auto Check is disabled.\n\n- Converts the last remaining channel-check status messages to English."
+  "version": "1.104",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.104/custom-adulttv-test-v1.104.zip",
+  "sha256": "fe7ae7e973ccaebc79f61e10b704698eac37f1256ab80ce29d2e2b17c8727de3",
+  "notes": "New Features:\n\n+ FuckFlix Auto Check now asks for confirmation before starting a full channel scan after a failed stream when no known streams are available.\n\nBugfixes:\n\n- Removes the remaining hard-coded channel skip rules from normal Site checks so channels are tested unless the optional three-failure skip threshold has actually been reached."
 }
