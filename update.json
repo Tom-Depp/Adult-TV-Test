@@ -4,5 +4,5 @@
   "version": "1.106",
   "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.106/custom-adulttv-test-v1.106.zip",
   "sha256": "79a05001c6607496630d4ddd187ad5f269a48e1b7cdc2412d5048d2060e5cb31",
-  "notes": "Bugfixes:\n\n- Strengthens the m3u4u/PVR refresh workflow so IPTV Simple reloads updated playlist data instead of continuing to use stale channel stream URLs after a playlist change.\n\n- Fixes cases where corrected or newly updated channel links, including Redlight HD and OXAX entries, worked in the Custom Site/m3u4u but could still fail in PVR because cached channel data had not been fully refreshed."
+  "notes": "New Features:\n\n+ Adds 240p support for low-resolution HLS channels detected during safe manifest-only checks.\n\nBugfixes:\n\n- Uses one canonical channel name for storing and displaying resolutions, fixing missing labels on names ending in Online and Penthouse TV/Penthouse Gold aliases.\n\n- Migrates previously saved resolution records automatically and refreshes an existing Adult TV Test playlist without requiring a full recheck.\n\n- Captures resolution directly from already validated CLICK master manifests when a channel is checked without normal Kodi playback."
 }
