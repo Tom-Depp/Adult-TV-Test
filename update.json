@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.110",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.110/custom-adulttv-test-v1.110.zip",
-  "sha256": "a1aadd1c65a450182daf67fd601adceb9449390bbe4f1de22d8234fc231270e0",
-  "notes": "Improvements:\n\n+ Improves Guljaj channel-name parsing so the real website names are shown instead of generic Guljaj ID labels, even when the same channel ID appears multiple times in the catalog HTML.\n\n+ Adds warm-up retries for initially empty Guljaj live HLS playlists, skips duplicate Player 1-4 stream URLs, and falls back to the public Free player when the logged-in live stream has no playable media segments.\n\nBugfixes:\n\n- Fixes the Guljaj status-check flow returning an invalid Settings directory after completion, which could throw the user out of Cumination.\n\n- Removes the asynchronous Guljaj login-success notification from the Settings workflow so it no longer appears behind the Settings window."
+  "version": "1.111",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.111/custom-adulttv-test-v1.111.zip",
+  "sha256": "93e071ee04aee95efedbb88a450df114f77abb26bc9d8455a57b1b77dfd4bb3f",
+  "notes": "New Features:\n\n+ Guljaj now inspects MPEG-TS segments for real video/audio tracks and H.264/MPEG-2 dimensions, stores the detected resolution, and shows it beside channel names like the other Sites.\n\n+ Normal Guljaj playback prefers the public Free stream only when both video and audio are confirmed; otherwise the logged-in Live stream remains available as the safe fallback.\n\nBugfixes:\n\n- Removes the unwanted Online channel prefix from Guljaj names while preserving the website channel title itself.\n\n- Restores one-click Guljaj playback when Cumination invokes the item without a resolved-URL plugin handle; right-click Play remains compatible.\n\n- Stream comparison continues to use the complete URL/path before index.m3u8, so channels sharing the same index.m3u8 filename are not treated as duplicates."
 }
