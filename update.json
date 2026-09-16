@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.108",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.108/custom-adulttv-test-v1.108.zip",
-  "sha256": "487cfe6999844297cae5123f9b358f1236507f1911873fd65a0a55e70be8e2d9",
-  "notes": "Bugfixes:\n\n- Reworks Senderstatus checks to avoid Kodi VideoPlayer/InputStream Adaptive entirely, preventing UI restarts and hangs caused by stalled stream open/close operations.\n\n- Fixes the 'Skip channels after 3 failed checks' setting so the enabled state is saved correctly after pressing OK.\n\nImprovements:\n\n+ Uses direct HLS/segment and bounded MP4 probes for OXAX, COM, CLICK and FuckFlix checks instead of opening streams through the Kodi player.\n\n+ Keeps a single progress dialog active during multi-site checks and removes unnecessary global dialog/player cleanup between sites, reducing GUI stress during long scans."
+  "version": "1.109",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.109/custom-adulttv-test-v1.109.zip",
+  "sha256": "7b52ef88cfa64adac100c89755dada633fad249ee9fa6ef701b1d4e14cee0900",
+  "notes": "New Features:\n\n+ Adds Guljaj.com as a hybrid Site: the public Adults (18+) catalog supplies 24 pages, channel names and artwork while logged-in live.guljaj.com resolves the full stream.\n\n+ Adds a dedicated Guljaj Status tab with a Check button at the top, All Pages mode, and independent multi-selection for pages 1-24.\n\n+ Guljaj credentials are requested in Kodi and stored only in the local Adult TV Test state; no login data is embedded in the Site package.\n\nBugfixes:\n\n- Guljaj status checks use the v1.108 player-free bounded HLS/segment probe and can try Player 1-4 without opening Kodi VideoPlayer."
 }
