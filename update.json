@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.113",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.113/custom-adulttv-test-v1.113.zip",
-  "sha256": "a67b9888d588f0c782014182e1cc9d79ca7745fd3bfb08c907d8867a406d2eff",
-  "notes": "New Features:\n\n+ Adds automatic fresh stream re-resolve recovery for .com, .click, FuckFlix, OXAX and Guljaj when an active HLS manifest is confirmed stuck, ended or repeatedly unreachable.\n\n+ Recovery is bounded to three automatic switches per channel within a 20-minute diagnostic chain and never restarts playback after a manual stop.\n\nImprovements:\n\n+ HLS diagnostics now run as reliable one-shot samples every 30 seconds; each completed sample schedules the next instead of relying on Kodi AlarmClock loop mode.\n\n+ Auto-recovery requests a completely fresh Site/PVR resolver URL while leaving normal playback untouched until a stuck-feed condition is confirmed.\n\nBugfixes:\n\n- Fixes v1.112 diagnostics stopping after the first manifest sample on affected Kodi/LibreELEC builds."
+  "version": "1.114",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.114/custom-adulttv-test-v1.114.zip",
+  "sha256": "0cbe846368122fd61888666efa7c1435f50b117264df51c08e19531fe3891174",
+  "notes": "New Features:\n\n- Adds safer HLS self-healing: media-sequence resets can trigger an immediate fresh re-resolve, while a recent zero-cache sample can recover a stream after an unexpected EOF.\n- Active recovery now performs a controlled stop before opening the freshly resolved URL so the old stalled player does not overlap the replacement stream.\n- Removes Guljaj completely from Adult TV Test, including the Site entry, Settings tab, login/status workflow, stream resolver and saved Guljaj credentials/resolution state.\n\nImprovements:\n\n- Adult IPTV now enables the PVR IPTV Simple remote M3U/EPG cache so the last valid list remains available when m3u4u is temporarily unavailable during Kodi startup.\n- Release Notes now use one continuous scrollable text area and preserve the release wording, bullet order and spacing instead of redistributing the text into fixed-height sections.\n\nBugfixes:\n\n- Fixes v1.113 recovery missing .com failures when the diagnostic manifest kept advancing even though the Kodi playback session was about to end.\n- Fixes recovery opening a replacement resolver on top of an already stalled player, which could resolve a fresh URL without completing the playback handoff."
 }
