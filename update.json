@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.111",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.111/custom-adulttv-test-v1.111.zip",
-  "sha256": "93e071ee04aee95efedbb88a450df114f77abb26bc9d8455a57b1b77dfd4bb3f",
-  "notes": "New Features:\n\n+ Guljaj now inspects MPEG-TS segments for real video/audio tracks and H.264/MPEG-2 dimensions, stores the detected resolution, and shows it beside channel names like the other Sites.\n\n+ Normal Guljaj playback prefers the public Free stream only when both video and audio are confirmed; otherwise the logged-in Live stream remains available as the safe fallback.\n\nBugfixes:\n\n- Removes the unwanted Online channel prefix from Guljaj names while preserving the website channel title itself.\n\n- Restores one-click Guljaj playback when Cumination invokes the item without a resolved-URL plugin handle; right-click Play remains compatible.\n\n- Stream comparison continues to use the complete URL/path before index.m3u8, so channels sharing the same index.m3u8 filename are not treated as duplicates."
+  "version": "1.112",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.112/custom-adulttv-test-v1.112.zip",
+  "sha256": "f9a36eed847b346b2bff32d15d4b4c184c04da685329f3d4253bd353213c78a5",
+  "notes": "New Features:\n\n+ Adds passive cross-Site HLS playback diagnostics for Adult-TV-Channels.com, Adult-TV-Channels.click, FuckFlix, OXAX and Guljaj.\n\n+ During real playback, Adult TV Test schedules one bounded manifest-only sample per minute and logs HTTP latency, media sequence, segment count, last-segment path, stale-manifest count, ENDLIST state and Kodi player/cache state.\n\nImprovements:\n\n+ The diagnostic does not proxy playback or download media segments and is skipped during Channel Status and Simple IPTV checks.\n\n+ Rotating stream URLs are stored only in a local temporary state file and query values are masked in log output."
 }
