@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.112",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.112/custom-adulttv-test-v1.112.zip",
-  "sha256": "f9a36eed847b346b2bff32d15d4b4c184c04da685329f3d4253bd353213c78a5",
-  "notes": "New Features:\n\n+ Adds passive cross-Site HLS playback diagnostics for Adult-TV-Channels.com, Adult-TV-Channels.click, FuckFlix, OXAX and Guljaj.\n\n+ During real playback, Adult TV Test schedules one bounded manifest-only sample per minute and logs HTTP latency, media sequence, segment count, last-segment path, stale-manifest count, ENDLIST state and Kodi player/cache state.\n\nImprovements:\n\n+ The diagnostic does not proxy playback or download media segments and is skipped during Channel Status and Simple IPTV checks.\n\n+ Rotating stream URLs are stored only in a local temporary state file and query values are masked in log output."
+  "version": "1.113",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.113/custom-adulttv-test-v1.113.zip",
+  "sha256": "a67b9888d588f0c782014182e1cc9d79ca7745fd3bfb08c907d8867a406d2eff",
+  "notes": "New Features:\n\n+ Adds automatic fresh stream re-resolve recovery for .com, .click, FuckFlix, OXAX and Guljaj when an active HLS manifest is confirmed stuck, ended or repeatedly unreachable.\n\n+ Recovery is bounded to three automatic switches per channel within a 20-minute diagnostic chain and never restarts playback after a manual stop.\n\nImprovements:\n\n+ HLS diagnostics now run as reliable one-shot samples every 30 seconds; each completed sample schedules the next instead of relying on Kodi AlarmClock loop mode.\n\n+ Auto-recovery requests a completely fresh Site/PVR resolver URL while leaving normal playback untouched until a stuck-feed condition is confirmed.\n\nBugfixes:\n\n- Fixes v1.112 diagnostics stopping after the first manifest sample on affected Kodi/LibreELEC builds."
 }
