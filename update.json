@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.123",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.123/custom-adulttv-test-v1.123.zip",
-  "sha256": "8450eebc1d953e0f00c972335335b325d42e7d5a75eee59e397887fbda9d5189",
-  "notes": "Bugfixes:\n\n- Restores the global Adult TV Test configuration/state block accidentally omitted from v1.122, fixing the import-time OXAX_AUTOTEST_START_TIMEOUT NameError that caused Cumination to disable the Custom Site.\n- Restores the related OXAX, COM, player-free Channel Status, Auto Check, resolution and three-failure state constants so the module cannot fall through into follow-up NameErrors.\n\nImprovements:\n\n- Self-update verification now rejects a Python package with unresolved global names before replacing the currently working Custom Site."
+  "version": "1.124",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.124/custom-adulttv-test-v1.124.zip",
+  "sha256": "f76e2c8fc4789bad9d1ca0acf8be7da1e34027a2c1126fbcd6ff32ef584f800f",
+  "notes": "New Features:\n\n- Settings now use separate 2 h Site Channels Check and 2 h IPTV Check tabs. The IPTV tab reads the current m3u4u group order dynamically and combines the final two groups into one selectable block.\n- OXAX now exposes six visible channel Pages matching the long-check split: 6/6/6/6/7 channels followed by the final 10 FAP TV channels.\n\nImprovements:\n\n- The IPTV long-check queue now follows the exact m3u4u channel order of the selected group. Starting Auto Check from a later channel rotates the queue and checks the earlier channels after reaching the end.\n- Settings keyboard/remote navigation is restored across tabs, buttons and selectable controls.\n- Release Notes preserve the source wording, heading order and additional GitHub sections instead of forcing everything into three fixed sections.\n\nBugfixes:\n\n- All available Sites is once again the guaranteed fallback selection in Channel Status, while individual Site selections can replace it without leaving an empty check scope.\n- The three-failed-check option is committed before manual Channel Status checks, so it works independently even when Auto Check is disabled.\n- Site/Page/Time/Group selections no longer use the unsupported checkmark glyph; selected buttons use the same light-red highlight style as active Settings tabs."
 }
