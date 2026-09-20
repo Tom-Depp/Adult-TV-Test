@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.121",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.121/custom-adulttv-test-v1.121.zip",
-  "sha256": "4b872e3e3d0bf16db7b79a45a46215744605042326ffd9414405e8c4b45a14fa",
-  "notes": "New Features:\n\n- Redlight HD now prepares a warm standby child session shortly before the signed one-hour token expires, allowing the expected expiry to recover from an already validated replacement instead of resolving the website only after playback has stopped.\n\nImprovements:\n\n- A severely degraded Redlight startup is now detected from the combined Kodi cache, playback-lag and manifest-staleness signals and may receive one fresh direct-child handoff during the first five minutes instead of buffering repeatedly for several minutes.\n- If Kodi ends while the current Redlight child manifest is still advancing, recovery now reuses that healthy session immediately instead of performing an unnecessary full website re-resolve.\n\nBugfixes:\n\n- Suppresses duplicate simultaneous .com EOF recoveries caused by the player-end watcher and scheduled diagnostic tick handling the same stop at nearly the same time.\n- Reduces the visible delay at the predictable Redlight token expiry by validating and reusing the prepared warm standby session when available.\n- Internal planned stream handoffs are no longer misclassified by the playback watcher as manual stops."
+  "version": "1.123",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.123/custom-adulttv-test-v1.123.zip",
+  "sha256": "8450eebc1d953e0f00c972335335b325d42e7d5a75eee59e397887fbda9d5189",
+  "notes": "Bugfixes:\n\n- Restores the global Adult TV Test configuration/state block accidentally omitted from v1.122, fixing the import-time OXAX_AUTOTEST_START_TIMEOUT NameError that caused Cumination to disable the Custom Site.\n- Restores the related OXAX, COM, player-free Channel Status, Auto Check, resolution and three-failure state constants so the module cannot fall through into follow-up NameErrors.\n\nImprovements:\n\n- Self-update verification now rejects a Python package with unresolved global names before replacing the currently working Custom Site."
 }
