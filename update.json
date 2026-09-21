@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.125",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.125/custom-adulttv-test-v1.125.zip",
-  "sha256": "3c7f6038456472f26b081f64d109a770aa0f8350e3fb96494ddafa9b95ba1686",
-  "notes": "New Features:\n\n- 2 h IPTV Check now offers One Channel before the m3u4u groups. Start IPTV Check opens a channel picker for this scope, while IPTV Auto Check can bind the selected time directly to a manually started Adult IPTV channel.\n\nImprovements:\n\n- One Channel uses the same selected 15 min./30 min./1 h/2 h hold time but never advances to another sender after the chosen channel finishes its test window.\n- Group checks keep the exact m3u4u source order and the existing wrap-around behaviour from a manually started channel.\n\nBugfixes:\n\n- Repairs m3u4u-to-Kodi PVR matching for playlist display names such as (Dorcel TV (576p)) (Cumination Add-on), which previously produced a zero-channel 2 h IPTV plan even though the group was populated.\n- Normalizes the known Penthouse Gold HD/Penthouse Gold and Penthouse Passion TV/Penthouse Passion naming differences without merging distinct channels such as Hustler HD and Hustler TV."
+  "version": "1.126",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.126/custom-adulttv-test-v1.126.zip",
+  "sha256": "b2827a680a32d4d91957b0ae3a4cf8942b4f0538de45e2d7f472e79f2a9e7113",
+  "notes": "New Features:\n\n- Dorcel TV now uses Kodi InputStream Adaptive for its direct child HLS stream, including manifest/segment headers. Every other Adult-TV-Channels.com sender keeps the existing native HLS path.\n\nImprovements:\n\n- Dorcel EOF recovery keeps the same isolated InputStream Adaptive route instead of falling back to the native demuxer after a restart.\n- Generated playlist labels now use the cleaner format: colored channel name, optional resolution, then the violet Cumination Add-on suffix without an extra outer bracket pair.\n\nBugfixes:\n\n- Playlist/PVR matching and the three-failed-check parser accept both the old bracketed label format and the new v1.126 format, so existing playlists remain compatible during migration."
 }
