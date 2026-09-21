@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.126",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.126/custom-adulttv-test-v1.126.zip",
-  "sha256": "b2827a680a32d4d91957b0ae3a4cf8942b4f0538de45e2d7f472e79f2a9e7113",
-  "notes": "New Features:\n\n- Dorcel TV now uses Kodi InputStream Adaptive for its direct child HLS stream, including manifest/segment headers. Every other Adult-TV-Channels.com sender keeps the existing native HLS path.\n\nImprovements:\n\n- Dorcel EOF recovery keeps the same isolated InputStream Adaptive route instead of falling back to the native demuxer after a restart.\n- Generated playlist labels now use the cleaner format: colored channel name, optional resolution, then the violet Cumination Add-on suffix without an extra outer bracket pair.\n\nBugfixes:\n\n- Playlist/PVR matching and the three-failed-check parser accept both the old bracketed label format and the new v1.126 format, so existing playlists remain compatible during migration."
+  "version": "1.127",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.127/custom-adulttv-test-v1.127.zip",
+  "sha256": "17c68c70105a936d8b6f6a6347e540573a87a4e9fb26243afe4a4a4dae806b6f",
+  "notes": "Improvements:\n\n- Dorcel TV now performs a planned InputStream Adaptive handoff shortly before the signed one-hour token expires, using the already prepared warm-standby stream instead of waiting for HTTP 403 retries and EOF recovery.\n- The planned Dorcel handoff remains isolated to Dorcel TV; all other Adult-TV-Channels.com streams keep their existing playback behaviour.\n\nBugfixes:\n\n- Replaces Status-tab Kodi radio buttons with normal highlighted buttons so Kodi can no longer toggle a control and the Python click handler immediately toggle it back.\n- Individual Site selections now remain active correctly, while All available Sites stays the guaranteed fallback when no specific Site remains selected.\n- Skip channels after 3 failed checks now stays enabled independently of Auto Check and is correctly applied to manual Channel Status checks."
 }
