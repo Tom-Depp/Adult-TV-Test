@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.129",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.129/custom-adulttv-test-v1.129.zip",
-  "sha256": "2369fcb991f100fc341005214167ff2d8ceb1d69aa0ba797fedc5123223c55e8",
-  "notes": "New Features:\n\n- Long-duration checks now bind their runtime state to the current Kodi process session, allowing stale state from an earlier Kodi run to be detected and removed automatically.\n- Every long-check hold step now has a unique step ID and an independent watchdog in addition to Kodi AlarmClock, preventing missed end actions while still suppressing duplicate timer execution.\n\nImprovements:\n\n- A stale IPTV Auto Check anchor is automatically cleared and re-scheduled instead of silently blocking a new One Channel or group check.\n- Dorcel TV now enables InputStream Adaptive HLS repair options for inconsistent media and discontinuity sequence values.\n- Dorcel diagnostics now log media sequence, discontinuity sequence, EXT-X-DISCONTINUITY markers and PROGRAM-DATE-TIME data for more precise analysis of the recurring freeze pattern.\n\nBugfixes:\n\n- Fixes stale adulttvtest_2h_check runtime data surviving a Kodi restart and preventing a newly configured 1 h/2 h check from being armed.\n- Fixes the case where Shutdown + Copy Log could never execute because the long-check timer had not actually been started.\n- Prevents AlarmClock and the fallback watchdog from executing the same completed hold step twice."
+  "version": "1.130",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.130/custom-adulttv-test-v1.130.zip",
+  "sha256": "1b87a1d4859523307fa0105d2b78bd099b144b3b5455b50cf54bcef5111fc376",
+  "notes": "Improvements:\n\n- Dorcel TV now prepares its next signed HLS session earlier and, when the diagnostic detects the stream's existing periodic resync stall, performs the planned token handoff inside that already-visible stall instead of creating a separate black-screen restart shortly before token expiry.\n- The previous 25-second pre-expiry planned handoff remains as a safety fallback if no suitable Dorcel stall window is detected.\n\nImportant:\n\n- The proven 1 h/2 h long-check runtime, watchdog, log-copy and PC shutdown implementation from v1.129 is unchanged."
 }
