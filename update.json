@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.133",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.133/custom-adulttv-test-v1.133.zip",
-  "sha256": "a5d15fa2776165030b1e6c631a6d747acd41f22290299db2fc02638f26854b11",
-  "notes": "Bugfixes:\n\n- IPTV Check now caches the last successfully loaded IPTV group names and reuses them as a fallback when m3u4u is temporarily unavailable, so the Settings tab no longer collapses to One Channel only during HTTP 521/522 or timeout incidents.\n- Settings keyboard/remote focus navigation is simplified so Left from controls inside an open tab returns directly to the active tab list instead of requiring multiple presses.\n\nImportant:\n\n- No Dorcel playback, predictive restart, WiFi, PVR configuration, long-check timing, watchdog, log-copy, Save Log Only or shutdown behaviour was changed in this release."
+  "version": "1.134",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.134/custom-adulttv-test-v1.134.zip",
+  "sha256": "1b7310b26f636069f3dcebe3a665e04f7d6f56f521d71a5126dbdb0e954379c2",
+  "notes": "New Features:\n\n- The separate long-check tabs are merged into a single 2 h Channels Check tab with independent Site Channels Check and IPTV Channels Check ON/OFF controls.\n- Site Channels Check now supports One Channel mode; when selected, page controls are hidden and the next started supported Site channel is tested by itself regardless of Site.\n- The previous Start Site Check, Start IPTV Check and separate IPTV Auto Check controls are replaced by the new Site/IPTV Channels Check toggles.\n\nImprovements:\n\n- During an active Site Channels Check, Adult-TV-Channels.com streams use the same resolved/PVR-style playback path that proved more stable in the previous IPTV comparison. Normal .com playback outside Site Channels Check remains unchanged.\n- Settings tab navigation now uses a single manual focus-navigation layer to avoid conflicts between Kodi-native setNavigation links and the Python action handler.\n\nImportant:\n\n- Site Channels Check and IPTV Channels Check are mutually exclusive so both cannot arm the shared runtime lock simultaneously.\n- Existing IPTV One Channel and group-anchor behaviour remain intact.\n- Long-check timing, runtime state, Check Lock, AlarmClock/watchdog, log-copy, Save Log Only and shutdown behaviour remain unchanged."
 }
