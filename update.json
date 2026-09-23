@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.132",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.132/custom-adulttv-test-v1.132.zip",
-  "sha256": "882ebefa7ef52466a5b99d0652260e280037ef5393047b90ddecbe725edae9a3",
-  "notes": "Improvements:\n\n- Dorcel TV no longer uses the experimental 10-second InputStream Adaptive live delay after the previous test showed more Kodi-side buffering warnings without a clear playback benefit.\n- Dorcel planned token handoff now accepts a wider real-stall window so the required ISA reopen can occur at the end of an already-visible Dorcel stall instead of as a separate blink whenever possible.\n- New WiFi diagnostics periodically log interface, signal strength and link quality during playback so future logs can distinguish stream/server issues from local wireless conditions.\n- Settings time labels are simplified back to 1 h and 2 h while the internal 65-minute and 125-minute long-check windows remain unchanged.\n\nBugfixes:\n\n- Restores native keyboard/remote navigation between vertically arranged Settings tabs: Up/Down changes tabs, Right enters the selected tab and Left returns to the tab list.\n\nImportant:\n\n- The proven long-check runtime, check lock, AlarmClock, watchdog, log-copy, Save Log Only and shutdown safety logic remain unchanged."
+  "version": "1.133",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.133/custom-adulttv-test-v1.133.zip",
+  "sha256": "a5d15fa2776165030b1e6c631a6d747acd41f22290299db2fc02638f26854b11",
+  "notes": "Bugfixes:\n\n- IPTV Check now caches the last successfully loaded IPTV group names and reuses them as a fallback when m3u4u is temporarily unavailable, so the Settings tab no longer collapses to One Channel only during HTTP 521/522 or timeout incidents.\n- Settings keyboard/remote focus navigation is simplified so Left from controls inside an open tab returns directly to the active tab list instead of requiring multiple presses.\n\nImportant:\n\n- No Dorcel playback, predictive restart, WiFi, PVR configuration, long-check timing, watchdog, log-copy, Save Log Only or shutdown behaviour was changed in this release."
 }
