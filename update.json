@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.135",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.135/custom-adulttv-test-v1.135.zip",
-  "sha256": "bc23cd558b2f500aa1be202c99342cc1c92714fac3361589eeeff2afe16a0c55",
-  "notes": "Bugfixes:\n\n- Site One Channel mode now fully replaces the stored Site/Page selection instead of only hiding Page controls, so the next started supported Site channel becomes the complete single-channel test plan and old Site/Page values can no longer re-enter the queue.\n- The Site branch of the long-check starter now respects an explicit One Channel plan override just like the IPTV branch.\n- Release Notes keyboard/Yatse navigation no longer forces focus onto the non-focusable scroll-capture control; Right enters Notes scrolling, Up/Down scrolls, and Left returns directly to the Release Notes tab.\n\nImportant:\n\n- No Dorcel playback, predictive restart, IPTV group logic, long-check timing, Check Lock, AlarmClock/watchdog, log-copy, Save Log Only or shutdown behaviour was changed in this release."
+  "version": "1.136",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.136/custom-adulttv-test-v1.136.zip",
+  "sha256": "b4c6f9cd117661cb2d755aabd58cfba107bcddbe71389f872b2429f2502fb827",
+  "notes": "Bugfixes:\n\n- Site and IPTV long-check settings now share the same duration and end-action state instead of keeping separate values that could drift apart.\n- PC Sleep, Save Log Only and Shutdown + Copy Log selections now apply identically to both Site Channels Check and IPTV Channels Check.\n- Legacy mismatched Site/IPTV settings are reconciled on load so an existing end action is preserved instead of being silently lost.\n\nImportant:\n\n- Dorcel playback, token handoff, predictive restart logic, One Channel playback, Check Lock, 65/125-minute timing, AlarmClock/watchdog, log-copy and shutdown implementation remain unchanged."
 }
