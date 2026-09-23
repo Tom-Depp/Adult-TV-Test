@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.130",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.130/custom-adulttv-test-v1.130.zip",
-  "sha256": "1b87a1d4859523307fa0105d2b78bd099b144b3b5455b50cf54bcef5111fc376",
-  "notes": "Improvements:\n\n- Dorcel TV now prepares its next signed HLS session earlier and, when the diagnostic detects the stream's existing periodic resync stall, performs the planned token handoff inside that already-visible stall instead of creating a separate black-screen restart shortly before token expiry.\n- The previous 25-second pre-expiry planned handoff remains as a safety fallback if no suitable Dorcel stall window is detected.\n\nImportant:\n\n- The proven 1 h/2 h long-check runtime, watchdog, log-copy and PC shutdown implementation from v1.129 is unchanged."
+  "version": "1.131",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.131/custom-adulttv-test-v1.131.zip",
+  "sha256": "079952ac1e9bf08f6c9eef9d8dd67a56863316730e862fbc08b489d8f64c9ff9",
+  "notes": "New Features:\n\n- 1 h and 2 h long checks now run five minutes longer internally, resulting in 65-minute and 125-minute hold windows while 15-minute and 30-minute checks remain unchanged.\n- 1 h and 2 h checks now offer a Save Log Only end action alongside PC Sleep and Shutdown + Copy Log.\n\nImprovements:\n\n- Dorcel TV now uses a 10-second InputStream Adaptive live delay to provide additional segment reserve against Kodi-only mini-buffering while keeping the website-originated periodic freezes unchanged.\n- Dorcel diagnostics now classify observed stalls as source_likely, kodi_buffer_likely, shared_or_kodi_ambiguous or healthy and log sequence deltas for easier comparison with Web Video Caster/browser behaviour.\n\nBugfixes:\n\n- Removes the old Dorcel startup-quality recovery reopen that could trigger an unnecessary Kodi-only restart shortly after playback began.\n- Removes Dorcel-specific HLS media/discontinuity sequence repair options that were no longer useful once the recurring large freezes were confirmed to occur identically on the website.\n\nImportant:\n\n- The existing long-check runtime state, check lock, AlarmClock, watchdog, log-copy and shutdown safety logic remain unchanged apart from the requested +5-minute hold duration and new Save Log Only end action."
 }
