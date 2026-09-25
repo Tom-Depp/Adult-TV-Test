@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.136",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.136/custom-adulttv-test-v1.136.zip",
-  "sha256": "b4c6f9cd117661cb2d755aabd58cfba107bcddbe71389f872b2429f2502fb827",
-  "notes": "Bugfixes:\n\n- Site and IPTV long-check settings now share the same duration and end-action state instead of keeping separate values that could drift apart.\n- PC Sleep, Save Log Only and Shutdown + Copy Log selections now apply identically to both Site Channels Check and IPTV Channels Check.\n- Legacy mismatched Site/IPTV settings are reconciled on load so an existing end action is preserved instead of being silently lost.\n\nImportant:\n\n- Dorcel playback, token handoff, predictive restart logic, One Channel playback, Check Lock, 65/125-minute timing, AlarmClock/watchdog, log-copy and shutdown implementation remain unchanged."
+  "version": "1.137",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.137/custom-adulttv-test-v1.137.zip",
+  "sha256": "3780e4843ad303ca9c457a105ae64f4d3ad8028c97f5656ce4b0694fa733d992",
+  "notes": "Bugfixes:\n\n- Save Log Only is now available for 15-minute and 30-minute Channels Checks in addition to the existing 1 h and 2 h checks.\n- Site Channels Check and IPTV Channels Check use the same synchronized end-action state, so Save Log Only behaves identically in both modes.\n- PC Sleep and Shutdown + Copy Log remain intentionally restricted to 1 h and 2 h checks.\n\nImportant:\n\n- Dorcel playback, token handoff, predictive restart logic, WiFi diagnostics, One Channel playback, Check Lock, 65/125-minute timing, AlarmClock/watchdog, log-copy implementation and shutdown implementation remain unchanged."
 }
