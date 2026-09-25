@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.138",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.138/custom-adulttv-test-v1.138.zip",
-  "sha256": "1a15ea224966fd1caafd6bbb8a76603ba89477adb5471660ea7f030f02042598",
-  "notes": "New Features:\n\n- Experimental Dorcel predictive refresh is enabled for 15-minute and 30-minute Channels Checks. It waits for two qualifying stall clusters roughly 270-330 seconds apart before confirming the cycle, then prepares a fresh Dorcel session and performs the handoff about 12 seconds before the next predicted stall.\n\nImprovements:\n\n- All Channels Checks now save the Kodi log automatically at completion.\n- Save Log Only is shown only for 1 h and 2 h checks; 15-minute and 30-minute checks save the log automatically without showing the option.\n- The 1 h/2 h end-action selection is preserved when running shorter checks.\n- Shutdown is now labeled simply Shutdown because log saving is automatic for every timing.\n\nImportant:\n\n- The predictive Dorcel refresh remains restricted to short 15/30-minute tests for controlled validation. Existing token-handoff safety logic remains active.\n- One Channel playback, Check Lock, 65/125-minute timing, AlarmClock/watchdog, log-copy implementation and shutdown implementation remain otherwise unchanged."
+  "version": "1.139",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.139/custom-adulttv-test-v1.139.zip",
+  "sha256": "1af8707afb3625a7b43d589251bfb4e91587957318bc16c0fcfbbdd77055bbba",
+  "notes": "**New Features**\n\n- Dorcel short checks now use reactive stall recovery instead of the previous predictive refresh. The local watcher reacts only after a real OutputPicture freeze cluster is detected and then reopens Dorcel at the current live edge.\n- The first 20 seconds after playback start are ignored for reactive recovery, and duplicate triggers from the same stall are suppressed with a cooldown.\n\n**Improvements**\n\n- For 1 h and 2 h Dorcel checks, the same real-stall marker is now used to trigger a prepared token refresh inside an actually observed stall whenever the token is already in its final refresh window.\n- The existing emergency token-expiry fallback remains active if no usable stall window occurs.\n\n**Important**\n\n- The previous predictive Dorcel restart path is disabled.\n- Automatic log saving, Save Log Only, Shutdown/Sleep, Site/IPTV parity, One Channel, Check Lock, 65/125-minute timing and AlarmClock/watchdog remain unchanged."
 }
