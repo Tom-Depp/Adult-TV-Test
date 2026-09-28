@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "channel": "test",
-  "version": "1.149",
-  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.149/custom-adulttv-test-v1.149.zip",
-  "sha256": "c6e11990d61545ca11f1db9161f740d622f899e87ed95d0363f78eeea15411a5",
-  "notes": "### Dorcel Recovery Integration\n\n- Unlimited, 15, 30, 60 and 120 minute Dorcel checks now use the same current shadow/outage recovery path.\n- The obsolete v1.142 proactive/reactive path and the disabled predictive five-minute experiment have been removed instead of remaining as dormant fallback code.\n\n### Unlimited Stop Handling\n\n- The shared Site/IPTV Unlimited guard now distinguishes an explicit user Stop from Ended/Error events, suppresses controlled internal handoffs and gives automatic EOF/error a recovery window plus Check Lock restore fallback instead of falsely saving the log and shutting down.\n\n### Site / IPTV Alignment\n\n- PVR_COM_SITE shares the same PVR_COM diagnostic path, so the duration-independent Dorcel recovery and generic Unlimited stop fix also apply to Site One Channel checks.\n\n### Important\n\n- Normal SOURCE_WINDOW thresholds, live-delay behavior and the planned hourly Dorcel token handoff remain unchanged."
+  "version": "1.150",
+  "download_url": "https://github.com/Tom-Depp/Adult-TV-Test/releases/download/v1.150/custom-adulttv-test-v1.150.zip",
+  "sha256": "3632997b68aded60b26978ea2ee89e1a586f9ff97b0de28994a3e898356edfc3",
+  "notes": "### Dorcel Recovery Route Stabilization\n\n- During active Site/IPTV checks, a validated Dorcel shadow session is now used only as source-availability proof. Non-hourly recovery reopens the original locked check route instead of playing the child chunks.m3u8 directly, preventing the roughly -17-hour timestamp/timeline fault seen in v1.149.\n- IPTV recovery reopens its PVR channel, while Site recovery reopens PVR_COM_SITE. If that route reopen fails, Adult TV Test does not fall back to a direct child-HLS play.\n\n### Handoff Validation\n\n- Non-hourly recovery handoffs now require a longer stable playback window plus sane Player.Time and A/V-sync before they are marked resumed. One bounded check-route timeline repair is available as a failsafe.\n- Failed route opens clear pending handoff and recovery-lock state so later recoveries are not blocked by a half-started handoff.\n\n### Important\n\n- Normal SOURCE_WINDOW thresholds, live-delay behavior, shadow timing, planned hourly token handoff, Unlimited stop handling, log saving and power actions remain unchanged."
 }
